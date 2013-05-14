@@ -13,7 +13,8 @@ INSTALACION
 
 Para el funcionamiento de mi programa solo es nesesario ejecutarlo sin nesecidad de insatarlo.
 
-Todo lo nesesario para poder ejecutarlo de manera completa es nesesario leer los requerimientos mensionados en el archivo "INSTALL"
+Todo lo nesesario para poder ejecutarlo de manera completa es nesesario leer los requerimientos 
+mensionados en el archivo "INSTALL"
 
 ------------------
 ------------------
