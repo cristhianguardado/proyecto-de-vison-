@@ -613,3 +613,4 @@ if __name__ == "__main__":
 	image=dilatacion(er,analis)
 
         masa,imagen,centros=formas(image,image)
+
