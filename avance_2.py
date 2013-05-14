@@ -178,4 +178,3 @@ if __name__ == "__main__":
 	image,gx,gy,minimo,maximo,conv,analis=boton('estudio.png')
 	erosion(image,analis)
 	dilatacion(image,analis)
-
