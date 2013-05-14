@@ -1,0 +1,32 @@
+
+INSTALL 
+
+Para tener un funcianamiento adecuado de este programa se nesecita tener insataladas en su maquina lo siguiente:
+
+  Python 2.7
+	PIL
+	Numpy
+
+Para poder instalar se nesecita realizar una serie de pasas poara cada uno:
+
+	Python 2.7 
+
+		Para instalar el interprete de python se puede descargar desde el
+		enlace:
+		
+		http://www.python.org/getit/
+		
+		Recuerde que se debe descargar la version 2.7.4 que es la mas actual, 
+		solo es nesesario ejecutar el insatalador y seguir los pasos indicados.
+
+	NumPy 
+
+	Se descarga el instalador desde:
+		
+	http://www.scipy.org/Download
+
+	PIL 
+	
+	Igual se descarga el istalador desde:
+	
+	http://www.pythonware.com/products/pil/
