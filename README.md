@@ -12,7 +12,11 @@ Todo lo nesesario para poder ejecutarlo de manera completa es nesesario leer los
 EJECUCION
 
 Para ejecutar este programa:
-  1.- Se abre la teminal 
-	2.- Localizar la direccion donde se encuentra el archivo 
-	3.- Ejecutar el comando 
-			  python version_final.py "nombre de la imagen.png" "umbral deseado en numero"
+
+1.- Se abre la teminal 
+
+2.- Localizar la direccion donde se encuentra el archivo 
+
+3.- Ejecutar el comando 
+
+python version_final.py "nombre de la imagen.png" "umbral deseado en numero"
