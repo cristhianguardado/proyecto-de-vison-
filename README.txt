@@ -1,7 +1,7 @@
 proyecto-de-vison-
 ==================
 
-proyecto de vison 
+PROYECTO DE VISION  
 
 INSTALACION 
 
