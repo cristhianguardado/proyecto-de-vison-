@@ -147,3 +147,4 @@ def ob_pixel(i,j,listas,analis,ancho,alto):
 
 if __name__ == "__main__":
   image,gx,gy,minimo,maximo,conv,analis=boton('3.png')
+  
