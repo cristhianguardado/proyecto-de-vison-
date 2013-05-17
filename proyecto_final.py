@@ -1,4 +1,3 @@
-
 import math
 
 import sys
@@ -36,8 +35,6 @@ def boton(img):
     im_bin,analis = binarizar(img)
 
     img.save('binarizada.png')
-
-    #masa,imagen,centros=formas(image)
 
     return im_bin,gx,gy,minimo,maximo,conv,analis
 
@@ -143,7 +140,7 @@ def normalizar(image,minimo,maximo,conv):
 
             foto[i,j]=(pixel,pixel,pixel);
 
-  return image
+	return image
 
 
 
@@ -313,8 +310,6 @@ def erosion(image,analis):
 
 			valor_min = int(min(valor_min))
 
-			#print 'valor minimo',valor_min
-
 			analis_2[i,j] = valor_min
 
 			foto[i,j] = (valor_min,valor_min,valor_min)
@@ -340,8 +335,6 @@ def dilatacion(image,analis):
 			valor_max = obtener_pixel(i,j,listas,analis,ancho,alto)
 
 			valor_max = int(max(valor_max))
-
-			#print 'valor maximo',valor_max
 
 			foto[i,j] = (valor_max,valor_max,valor_max)
 
@@ -377,8 +370,6 @@ def c_colorear(im,imag):
 
     c=0
 
-    #pintar=[]
-
     f=0
 
     m=[]
@@ -395,8 +386,6 @@ def c_colorear(im,imag):
 
             if (pix==(0,0,0)):
 
-                #print 'entro'
-
                 c +=1
 
                 origen=(i,j)
@@ -409,7 +398,7 @@ def c_colorear(im,imag):
 
                     centro=(sum(abscisa)/float(num_pixels),sum(ordenada)/float(num_pixels))
 
-                        #centro_masa.append(centro)
+                        
 
                     masa.append(num_pixels)
 
@@ -417,29 +406,15 @@ def c_colorear(im,imag):
 
                     if v==True: 
 
-                       # print 'ES CIRCULO'
-
                         porcentajes.append(p)
 
                         pintar(puntos,im)
-
-                           # self.pintar(puntos)
 
                         fondos.append(fondo)
 
                         centro_masa.append(centro)
 
-                        #print 'pintar',pintar
-
-                        #pinta(pintar,imag)
-
-    
-
-                    #detectar_rectangulo(num_pixels,img,centro,puntos,fondo)
-
-   # print 'pintar',pintar
-
-    #pinta(pintar,imag)
+                        
 
     im.save('final.jpg')
 
@@ -459,15 +434,9 @@ def pintar(puntos,im):
 
     putpixel = im.putpixel
 
-        #r,g,b= random.randint(0,255),random.randint(0,255), random.randint(0,255)
-
-        #fondo=(r,g,b)    
-
     fondo=(255,0,0)
 
     for m in puntos:
-
-        #pixels[m[0],m[1]]==fondo
 
         putpixel((m[0], m[1]), fondo)
 
@@ -491,13 +460,7 @@ def detectar_elipse(num_pixeles,im,centro,puntos,fondo):
 
     a=semidiametrox(x,y,pixels,im,fondo)
 
-   # print 'a',a
-
-   # print 'area',area1
-
     area1=pi*pow(a,2)
-
-    #print 'area',area1
 
     if  num_pixeles<area1<num_pixeles+40000:
 
@@ -506,8 +469,6 @@ def detectar_elipse(num_pixeles,im,centro,puntos,fondo):
 
 
 def semidiametrox(aumenta,igual,pixels,im,fondo):
-
-   # print 'sacando semidiametro'
 
     pixels=im.load()
 
@@ -599,7 +560,7 @@ def bfs(pix,origen,im,fondo):
 
                         pass
 
-    im.save('FORMAS.png')
+    im.save('formas.png')
 
     return num,abscisa,ordenada,puntos
 
@@ -614,4 +575,3 @@ if __name__ == "__main__":
 	image=dilatacion(er,analis)
 
         masa,imagen,centros=formas(image,image)
-
